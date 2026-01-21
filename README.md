@@ -155,6 +155,21 @@ npm run build
 
 # Type checking
 npm run type-check
+
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm test
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests once
+npm run test:run
+
+# Run tests with coverage
+npm run test:coverage
 ```
 
 ## Building

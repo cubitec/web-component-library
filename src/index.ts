@@ -5,7 +5,7 @@ import Button from './components/Button.ce.vue'
 const ButtonElement = defineCustomElement(Button)
 
 // Registration function
-export function registerComponents() {
+function registerComponents() {
   if (!customElements.get('cubitec-button')) {
     customElements.define('cubitec-button', ButtonElement)
   }
