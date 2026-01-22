@@ -170,7 +170,27 @@ npm run test:run
 
 # Run tests with coverage
 npm run test:coverage
+
+# Start Storybook
+npm run storybook
+
+# Build Storybook
+npm run build-storybook
 ```
+
+## Storybook
+
+This project includes [Storybook](https://storybook.js.org/) for component development and documentation. You can view and interact with all components in isolation.
+
+```bash
+# Start Storybook development server
+npm run storybook
+
+# Build static Storybook site
+npm run build-storybook
+```
+
+The Storybook will be available at `http://localhost:6006` when running the dev server.
 
 ## Building
 
