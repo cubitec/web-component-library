@@ -303,6 +303,8 @@ npm run build-storybook
 
 This project includes [Storybook](https://storybook.js.org/) for component development and documentation. You can view and interact with all components in isolation.
 
+### Local Development
+
 ```bash
 # Start Storybook development server
 npm run storybook
@@ -312,6 +314,23 @@ npm run build-storybook
 ```
 
 The Storybook will be available at `http://localhost:6006` when running the dev server.
+
+### Public Deployment
+
+Storybook is automatically deployed to GitHub Pages on every push to the `main` branch. The public Storybook is available at:
+
+**https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/**
+
+Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub repository details.
+
+The deployment is handled automatically by the GitHub Actions workflow (`.github/workflows/storybook.yml`). To enable GitHub Pages:
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy Storybook on every push to `main`
+
+You can also manually trigger the deployment by going to the **Actions** tab and running the "Deploy Storybook to GitHub Pages" workflow.
 
 ## Building
 
