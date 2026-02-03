@@ -292,6 +292,36 @@ npm run test:run
 # Run tests with coverage
 npm run test:coverage
 
+## Test Coverage
+
+Test coverage reports are automatically generated and available in multiple ways:
+
+### Viewing Coverage Reports
+
+1. **GitHub Actions Artifacts** (Recommended)
+   - After tests run, coverage HTML reports are uploaded as artifacts
+   - Go to the **Actions** tab → Select a workflow run → Download the `coverage-report-20.x` artifact
+   - Extract and open `index.html` in your browser for a detailed interactive report
+
+2. **Pull Request Comments**
+   - Coverage summary is automatically posted as a comment on pull requests
+   - Shows coverage percentages for statements, branches, functions, and lines
+   - Includes a link to download the full HTML report
+
+3. **GitHub Actions Summary**
+   - Coverage summary is displayed in the workflow run summary
+   - View it in the **Actions** tab under the workflow run details
+
+4. **Codecov** (Optional)
+   - If you set up a Codecov account and add `CODECOV_TOKEN` secret, coverage is uploaded to codecov.io
+   - Provides historical coverage tracking and PR coverage diffs
+   - Visit [codecov.io](https://codecov.io) to set up your repository
+
+### Local Coverage Reports
+
+When running `npm run test:coverage` locally, coverage reports are generated in the `coverage/` directory:
+- Open `coverage/index.html` in your browser for the interactive HTML report
+
 # Start Storybook
 npm run storybook
 
