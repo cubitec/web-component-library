@@ -41,7 +41,7 @@ Coverage is also uploaded as Actions artifacts and summarized in PR comments.
 
 Component documentation and demos are built with [Storybook](https://storybook.js.org/).
 
-- **Live:** [cubitec.github.io/component-library](https://cubitec.github.io/component-library) — deployed from the `main` branch via GitHub Actions.
+- **Live:** [ramsesz.github.io/poc-component-library](https://ramsesz.github.io/poc-component-library) — deployed from the `main` branch via GitHub Actions.
 - **Local:** `npm run storybook` (http://localhost:6006).
 
 To enable the live site, set **Settings → Pages → Source** to **GitHub Actions**.
